@@ -16,6 +16,7 @@
 		F142C05925DC92BE0071FA21 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C05825DC92BE0071FA21 /* MovieService.swift */; };
 		F158A16525DCAAFA00A83966 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158A16425DCAAFA00A83966 /* Movie.swift */; };
 		F158A16D25DCAD4500A83966 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158A16C25DCAD4500A83966 /* URLs.swift */; };
+		F1D0FCED25DD831D004F0121 /* MovieTrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0FCEC25DD831D004F0121 /* MovieTrendingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F142C05825DC92BE0071FA21 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		F158A16425DCAAFA00A83966 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F158A16C25DCAD4500A83966 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		F1D0FCEC25DD831D004F0121 /* MovieTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTrendingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F142C02725DC90EA0071FA21 /* ContentView.swift */,
+				F1D0FCEC25DD831D004F0121 /* MovieTrendingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				F158A16D25DCAD4500A83966 /* URLs.swift in Sources */,
 				F142C02825DC90EA0071FA21 /* ContentView.swift in Sources */,
+				F1D0FCED25DD831D004F0121 /* MovieTrendingView.swift in Sources */,
 				F142C02625DC90EA0071FA21 /* MoviesApp_SwiftUIApp.swift in Sources */,
 				F158A16525DCAAFA00A83966 /* Movie.swift in Sources */,
 				F142C05925DC92BE0071FA21 /* MovieService.swift in Sources */,
