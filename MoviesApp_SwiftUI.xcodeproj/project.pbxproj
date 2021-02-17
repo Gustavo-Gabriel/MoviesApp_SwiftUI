@@ -13,8 +13,9 @@
 		F142C02D25DC90EC0071FA21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F142C02C25DC90EC0071FA21 /* Preview Assets.xcassets */; };
 		F142C03825DC90EC0071FA21 /* MoviesApp_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C03725DC90EC0071FA21 /* MoviesApp_SwiftUITests.swift */; };
 		F142C04325DC90EC0071FA21 /* MoviesApp_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C04225DC90EC0071FA21 /* MoviesApp_SwiftUIUITests.swift */; };
-		F142C05925DC92BE0071FA21 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C05825DC92BE0071FA21 /* MoviesService.swift */; };
+		F142C05925DC92BE0071FA21 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C05825DC92BE0071FA21 /* MovieService.swift */; };
 		F158A16525DCAAFA00A83966 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158A16425DCAAFA00A83966 /* Movie.swift */; };
+		F158A16D25DCAD4500A83966 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158A16C25DCAD4500A83966 /* URLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,9 @@
 		F142C03E25DC90EC0071FA21 /* MoviesApp_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesApp_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F142C04225DC90EC0071FA21 /* MoviesApp_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApp_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		F142C04425DC90EC0071FA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F142C05825DC92BE0071FA21 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		F142C05825DC92BE0071FA21 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		F158A16425DCAAFA00A83966 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F158A16C25DCAD4500A83966 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,8 @@
 		F142C05725DC915D0071FA21 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F142C05825DC92BE0071FA21 /* MoviesService.swift */,
+				F142C05825DC92BE0071FA21 /* MovieService.swift */,
+				F158A16C25DCAD4500A83966 /* URLs.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -305,10 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F158A16D25DCAD4500A83966 /* URLs.swift in Sources */,
 				F142C02825DC90EA0071FA21 /* ContentView.swift in Sources */,
 				F142C02625DC90EA0071FA21 /* MoviesApp_SwiftUIApp.swift in Sources */,
 				F158A16525DCAAFA00A83966 /* Movie.swift in Sources */,
-				F142C05925DC92BE0071FA21 /* MoviesService.swift in Sources */,
+				F142C05925DC92BE0071FA21 /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

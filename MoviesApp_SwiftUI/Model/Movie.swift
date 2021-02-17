@@ -14,7 +14,7 @@ struct MovieList: Codable {
     var total_pages: Int
 }
 
-struct Movie: Codable {
+struct Movie: Codable, Hashable {
     var poster_path: String?
     var adult: Bool
     var overview: String

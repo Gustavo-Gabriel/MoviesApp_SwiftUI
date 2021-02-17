@@ -8,22 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var movies: [Movie] = []
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .onAppear(){
-                getRequest(url: url) {
-                    (resultado, erro) in
-                    
-                    if resultado != nil {
-                        print("Sua requisição foi realizada com sucesso: \n \(resultado!)")
-                    } else{
-                        print("A requisição nao funcionou")
-                    }
-                    
-                }
+    
+        List{
+            ForEach(movies, id: \.self){ movie in
+                Text(movie.title)
             }
+        }
+        .onAppear{
+            MovieService().get{ (movies) in
+                self.movies = movies
+            }
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
