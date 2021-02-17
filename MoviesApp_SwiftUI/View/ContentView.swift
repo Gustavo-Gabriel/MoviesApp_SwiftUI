@@ -23,6 +23,7 @@ struct ContentView: View {
                     self.movies = movies
                 }
             }
+            
             .navigationTitle("Movies")
         }
     }
