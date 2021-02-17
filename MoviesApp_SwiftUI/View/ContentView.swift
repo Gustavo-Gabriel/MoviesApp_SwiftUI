@@ -14,29 +14,16 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView{
-            
-            VStack{
-                
-                HStack{
-                    Text("Treding")
-                        .font(Font.title3.bold())
-                    
-                    Spacer()
+            List{
+                ForEach(movies, id: \.self){ movie in
+                    MovieTrendingView(movie: movie)
                 }
-                .padding()
-                
-                List{
-                    ForEach(movies, id: \.self){ movie in
-                        MovieTrendingView(movie: movie)
-                    }
+            }.onAppear{
+                MovieService().get{ (movies) in
+                    self.movies = movies
                 }
             }
-        }
-        .navigationTitle("Movies")
-        .onAppear{
-            MovieService().get{ (movies) in
-                self.movies = movies
-            }
+            .navigationTitle("Movies")
         }
     }
     
