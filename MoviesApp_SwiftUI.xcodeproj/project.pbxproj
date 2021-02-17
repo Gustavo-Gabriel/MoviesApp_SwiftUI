@@ -176,6 +176,7 @@
 		F142C05725DC915D0071FA21 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F1D0FCF325DDAAFB004F0121 /* ImageFetcher.swift */,
 				F142C05825DC92BE0071FA21 /* MovieService.swift */,
 				F158A16C25DCAD4500A83966 /* URLs.swift */,
 			);
@@ -185,7 +186,6 @@
 		F158A16325DCAAA500A83966 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F1D0FCF225DDAADC004F0121 /* Downloader */,
 				F1D0FCF125DDAAC9004F0121 /* Entities */,
 			);
 			path = Model;
@@ -197,14 +197,6 @@
 				F158A16425DCAAFA00A83966 /* Movie.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		F1D0FCF225DDAADC004F0121 /* Downloader */ = {
-			isa = PBXGroup;
-			children = (
-				F1D0FCF325DDAAFB004F0121 /* ImageFetcher.swift */,
-			);
-			path = Downloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
