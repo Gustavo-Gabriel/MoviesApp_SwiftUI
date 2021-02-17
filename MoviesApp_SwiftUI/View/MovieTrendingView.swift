@@ -13,13 +13,25 @@ struct MovieTrendingView: View {
     
     var body: some View {
         VStack{
-            Text(movie.title)
-                .padding()
-            Text(movie.overview)
-                .padding()
-                .multilineTextAlignment(.leading)
             
-            LoadableImageView(with: "https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
+            LoadableImageView(with: "https://image.tmdb.org/t/p/original\(movie.backdrop_path ?? "")")
+                .overlay(
+                    VStack{
+                        
+                        Spacer()
+                        
+                        HStack{
+                            Text(movie.title)
+                                .padding()
+                                .padding(.horizontal, 10)
+                                .font(Font.title3.bold())
+                                .foregroundColor(.white)
+                            
+                            Spacer()
+                        }
+                        
+                    }
+                )
         }
     }
 }

@@ -18,6 +18,8 @@ struct LoadableImageView: View {
                     .resizable()
                     .frame(height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(24)
             )
         } else {
             return AnyView(

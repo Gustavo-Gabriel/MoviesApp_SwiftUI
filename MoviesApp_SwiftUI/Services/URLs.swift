@@ -8,3 +8,4 @@
 import Foundation
 
 let urlMovie = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=ad9408b6ab6ea7841f75c62d89c765ad&language=en-US&page=1")!
+let urlImage: String = "https://image.tmdb.org/t/p/original"
