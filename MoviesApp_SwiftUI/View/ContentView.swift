@@ -16,7 +16,12 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(movies, id: \.self){ movie in
-                    MovieTrendingView(movie: movie)
+                    
+                    NavigationLink(
+                        destination: Text("Destination"),
+                        label: {
+                            MovieTrendingView(movie: movie)
+                        })
                 }
             }.onAppear{
                 MovieService().get{ (movies) in
